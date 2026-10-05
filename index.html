@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quitar fondo de imagen online gratis | QuitarFondo</title>
+  <meta name="description" content="Quita el fondo de tus imágenes en segundos y descárgalas en PNG transparente. Gratis, sin registro y 100% privado: tus fotos no salen de tu navegador.">
+
+  <!-- GOOGLE ADSENSE: reemplaza ca-pub-XXXXXXXXXXXXXXXX por tu ID y descomenta -->
+  <!--
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="/">Quitar<span>Fondo</span></a>
+    <nav>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#" class="btn-small">Subir imagen</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Quitar fondo de imagen</h1>
+      <p>Elimina el fondo de tus fotos automáticamente y descárgalas en <strong>PNG transparente</strong>.<br>Gratis, sin registro y sin subir tus fotos a ningún servidor.</p>
+
+      <div id="dropzone" class="dropzone" tabindex="0">
+        <button id="pickBtn" class="btn-main" type="button">Seleccionar imágenes</button>
+        <p class="hint">o arrastra y suelta tus imágenes aquí (JPG, PNG, WEBP)</p>
+        <input id="fileInput" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden>
+      </div>
+    </section>
+
+    <!-- Anuncio superior -->
+    <div class="ad ad-banner"><span>Publicidad</span>
+      <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000001" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+    </div>
+
+    <section id="results" class="results" hidden>
+      <div class="results-head">
+        <h2>Tus imágenes</h2>
+        <div>
+          <button id="downloadAll" class="btn-main btn-sm" type="button" hidden>Descargar todas</button>
+          <button id="clearBtn" class="btn-ghost" type="button">Limpiar</button>
+        </div>
+      </div>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <div class="page-with-side">
+      <aside class="ad ad-side"><span>Publicidad</span></aside>
+
+      <div class="content">
+        <section id="como-funciona" class="steps">
+          <h2>Cómo quitar el fondo en 3 pasos</h2>
+          <ol>
+            <li><b>1</b><h3>Sube tu imagen</h3><p>Elige una o varias fotos desde tu dispositivo.</p></li>
+            <li><b>2</b><h3>Espera unos segundos</h3><p>La inteligencia artificial detecta el sujeto y borra el fondo.</p></li>
+            <li><b>3</b><h3>Descarga el PNG</h3><p>Obtén tu imagen con fondo transparente, lista para usar.</p></li>
+          </ol>
+        </section>
+
+        <section class="features">
+          <div><h3>100% privado</h3><p>El proceso ocurre en tu navegador. Tus imágenes nunca se envían a un servidor.</p></div>
+          <div><h3>Calidad HD</h3><p>Bordes limpios en personas, productos, mascotas y logotipos.</p></div>
+          <div><h3>Gratis</h3><p>Sin registro, sin marcas de agua y sin límite de imágenes.</p></div>
+        </section>
+
+        <div class="ad ad-banner"><span>Publicidad</span></div>
+
+        <section id="faq" class="faq">
+          <h2>Preguntas frecuentes</h2>
+          <details><summary>¿Qué es un PNG sin fondo?</summary><p>PNG es un formato que admite transparencia. Al quitar el fondo, esa zona queda transparente y puedes colocar la imagen sobre cualquier color o diseño.</p></details>
+          <details><summary>¿Se guardan mis imágenes?</summary><p>No. Todo se procesa localmente en tu navegador, por lo que tus fotos no se suben ni se almacenan.</p></details>
+          <details><summary>¿Por qué la primera imagen tarda más?</summary><p>La primera vez se descarga el modelo de IA (unos MB). Después queda en caché y las siguientes imágenes son mucho más rápidas.</p></details>
+          <details><summary>¿Qué formatos puedo subir?</summary><p>JPG, PNG y WEBP. El resultado siempre se descarga en PNG.</p></details>
+        </section>
+      </div>
+
+      <aside class="ad ad-side"><span>Publicidad</span></aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 QuitarFondo · <a href="#">Privacidad</a> · <a href="#">Términos</a> · <a href="#">Contacto</a></p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
