@@ -58,7 +58,10 @@ async function process(file, card) {
     downloadAll.hidden = done.length < 2;
   } catch (err) {
     console.error(err);
-    status.textContent = "Error al procesar la imagen";
+    const local = location.protocol === "file:";
+    status.textContent = local
+      ? "Error: abre el sitio con un servidor local o publicado (no con doble clic en el archivo)."
+      : "Error al procesar la imagen: " + (err && err.message ? err.message : err);
     card.querySelector(".spin").remove();
   }
 }
