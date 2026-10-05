@@ -24,8 +24,14 @@
 
   <main>
     <section class="hero">
+      <div id="heroOrb" class="hero-orb" aria-hidden="true"></div>
       <h1>Quitar fondo de imagen</h1>
       <p>Elimina el fondo de tus fotos automáticamente y descárgalas en <strong>PNG transparente</strong>.<br>Gratis, sin registro y sin subir tus fotos a ningún servidor.</p>
+
+      <div class="modes" role="radiogroup" aria-label="Tipo de imagen">
+        <label><input type="radio" name="mode" value="ai" checked><span>Foto o persona<small>IA, recorta el sujeto</small></span></label>
+        <label><input type="radio" name="mode" value="solid"><span>Logo o fondo liso<small>quita un solo color</small></span></label>
+      </div>
 
       <div id="dropzone" class="dropzone" tabindex="0">
         <button id="pickBtn" class="btn-main" type="button">Seleccionar imágenes</button>
