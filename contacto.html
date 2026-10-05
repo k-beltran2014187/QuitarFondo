@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | QuitarFondo</title>
+  <meta name="description" content="Escríbenos para dudas, sugerencias o problemas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">Quitar<span>Fondo</span></a>
+    <nav><a href="index.html#como-funciona">Cómo funciona</a><a href="index.html#faq">Preguntas</a><a href="index.html" class="btn-small">Subir imagen</a></nav>
+  </header>
+  <main class="page"><div class="panel">
+<h1>Contacto</h1>
+<p class="updated">¿Tienes una duda, sugerencia o problema con la herramienta? Escríbenos.</p>
+<p>Correo: <strong>contacto@tudominio.com</strong></p>
+<form id="contactForm" class="form">
+  <label>Nombre<input id="name" required autocomplete="name"></label>
+  <label>Correo electrónico<input id="email" type="email" required autocomplete="email"></label>
+  <label>Mensaje<textarea id="message" rows="6" required></textarea></label>
+  <button class="btn-main" type="submit">Enviar mensaje</button>
+  <p class="note">Al enviar se abrirá tu aplicación de correo con el mensaje listo.</p>
+</form>
+<script>
+document.getElementById("contactForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  var v=function(i){return document.getElementById(i).value};
+  var body="Nombre: "+v("name")+"\nCorreo: "+v("email")+"\n\n"+v("message");
+  location.href="mailto:contacto@tudominio.com?subject="+encodeURIComponent("Contacto desde QuitarFondo")+"&body="+encodeURIComponent(body);
+});
+</script>
+  </div></main>
+  <footer>
+    <p>© 2026 QuitarFondo · <a href="privacidad.html">Privacidad</a> · <a href="terminos.html">Términos</a> · <a href="contacto.html">Contacto</a></p>
+  </footer>
+</body>
+</html>

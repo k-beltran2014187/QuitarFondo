@@ -10,4 +10,4 @@ El procesamiento se hace en el navegador con [@imgly/background-removal](https:/
 1. En `index.html` descomenta el script de AdSense y pon tu `ca-pub-XXXXXXXXXXXXXXXX`.
 2. Reemplaza los bloques `.ad` por tus `<ins class="adsbygoogle">`.
 3. Crea `ads.txt` en la raíz con tu línea de editor.
-4. AdSense exige páginas de Privacidad, Términos y Contacto (pendientes).
+4. Páginas de Privacidad, Términos y Contacto listas. Cambia `contacto@tudominio.com` por tu correo real en `contacto.html` y `privacidad.html`.
